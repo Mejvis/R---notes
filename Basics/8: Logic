@@ -1,0 +1,145 @@
+8: Logic
+
+> TRUE == FALSE
+[1] FALSE  
+
+> TRUE == TRUE
+[1] TRUE  
+
+> (FALSE == TRUE) == FALSE
+[1] TRUE  
+
+> 6 == 7
+[1] FALSE  
+
+>  6 < 7
+[1] TRUE  
+
+>  10 <= 10
+[1] TRUE  
+
+1: 0 > -36
+2: 9 >= 10
+3: 6 < 8
+4: 7 == 7
+
+Selection: 2  
+
+1: 57 < 8
+2: 7 == 9
+3: -6 > -7
+4: 9 >= 10
+
+Selection: 3  
+
+> 5 != 7
+[1] TRUE  
+
+> !5==7
+[1] TRUE  
+
+1: !(0 >= -1)
+2: 7 != 8
+3: 9 < 10
+4: !FALSE
+
+Selection: 1  
+
+1: TRUE
+2: FALSE
+3: Can there be objective truth when programming?
+4: %>%
+
+Selection: 1  
+
+> FALSE & FALSE
+[1] FALSE  
+
+> TRUE & c(TRUE, FALSE, FALSE)
+[1]  TRUE FALSE FALSE  
+
+> TRUE && c(TRUE, FALSE, FALSE)
+[1] TRUE  
+
+> TRUE | c(TRUE, FALSE, FALSE)
+[1] TRUE TRUE TRUE  
+
+> TRUE || c(TRUE, FALSE, FALSE)
+[1] TRUE  
+
+> 5 > 8 || 6 != 8 && 4 > 3.9
+[1] TRUE  
+
+1: TRUE && 62 < 62 && 44 >= 44
+2: 99.99 > 100 || 45 < 7.3 || 4 != 4.0
+3: FALSE || TRUE && FALSE
+4: TRUE && FALSE || 9 >= 4 && 3 < 6
+
+Selection: 4  
+
+1: !(8 > 4) ||  5 == 5.0 && 7.8 >= 7.79
+2: FALSE && 6 >= 6 || 7 >= 8 || 50 <= 49.5
+3: FALSE || TRUE && 6 != 4 || 9 > 4
+4: 6 >= -9 && !(6 > 7) && !(!TRUE)
+
+Selection: 2  
+
+> isTRUE(6 > 4)
+[1] TRUE  
+
+1: isTRUE(!TRUE)
+2: !isTRUE(4 < 3)
+3: !isTRUE(8 != 5)
+4: isTRUE(3)
+5: isTRUE(NA)
+
+Selection: 2  
+
+> identical('twins', 'twins')
+[1] TRUE  
+
+1: identical('hello', 'Hello')
+2: !identical(7, 7)
+3: identical(4, 3.1)
+4: identical(5 > 4, 3 < 3.1)
+
+Selection: 4  
+
+> xor(5 == 6, !FALSE)
+[1] TRUE  
+
+1: xor(identical(xor, 'xor'), 7 == 7.0)
+2: xor(!!TRUE, !!FALSE)
+3: xor(!isTRUE(TRUE), 6 > -1)
+4: xor(4 >= 9, 8 != 8.0)
+
+Selection: 4  
+
+> ints <- sample(10)  
+
+> ints > 5
+ [1]  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE  
+ 
+> which(ints > 7)
+[1] 7 8 9  
+
+1: ints <= 2
+2: ints < 2
+3: which(ints < 2)
+4: which(ints <= 2)
+
+Selection: 4  
+
+> any(ints < 0)
+[1] FALSE  
+
+> all(ints > 0)
+[1] TRUE  
+
+1: any(ints == 2.5)
+2: all(c(TRUE, FALSE, TRUE))
+3: all(ints == 10)
+4: any(ints == 10)
+
+Selection: 4  
+
